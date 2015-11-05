@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\Users\Noah\Google Drive\HSR\3. Semester\MsTe\02_Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.Dal\AutoReservation.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\Noah\Documents\Visual Studio 2015\Projects\99_Miniprojekt\Testat\AutoReservation.Dal\AutoReservation.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.
