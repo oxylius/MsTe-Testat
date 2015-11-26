@@ -58,7 +58,7 @@ namespace AutoReservation.Common.DataTransferObjects
             get { return auto; }
             set
             {
-                if (auto.Equals(value))
+                if (auto == (value))
                 {
                     return;
                 }
@@ -73,7 +73,7 @@ namespace AutoReservation.Common.DataTransferObjects
             get { return kunde; }
             set
             {
-                if (kunde.Equals(value))
+                if (kunde == value)
                 {
                     return;
                 }

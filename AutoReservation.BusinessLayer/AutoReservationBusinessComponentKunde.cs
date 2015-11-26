@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using AutoReservation.Dal;
+using System.Data.Entity.Infrastructure;
 
 namespace AutoReservation.BusinessLayer
 {
@@ -39,9 +40,19 @@ namespace AutoReservation.BusinessLayer
         {
             using (var context = new AutoReservationEntities())
             {
-                context.Kunden.Attach(original);
-                context.Entry(original).CurrentValues.SetValues(modified);
-                return modified;
+                try
+                {
+                    context.Kunden.Attach(original);
+                    context.Entry(original).CurrentValues.SetValues(modified);
+                    return modified;
+                }
+                catch (DbUpdateConcurrencyException e)
+                {
+                    HandleDbConcurrencyException<Kunde>(context, original);
+                    return null;
+                }
+                
+
             }
         }
         //Kunde Delete(Kunde)

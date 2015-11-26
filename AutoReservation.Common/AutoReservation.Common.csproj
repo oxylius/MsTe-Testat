@@ -86,6 +86,9 @@
     <Compile Include="Extensions\IExtendedNotifyPropertyChanged.cs" />
     <Compile Include="Extensions\NotifyPropertyChangedExtensions.cs" />
     <Compile Include="Interfaces\IAutoReservationService.cs" />
+    <Compile Include="Interfaces\IAutoReservationServiceReservation.cs" />
+    <Compile Include="Interfaces\IAutoReservationServiceKunde.cs" />
+    <Compile Include="Interfaces\IAutoReservationServiceAuto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

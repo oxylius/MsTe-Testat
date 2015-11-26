@@ -1,13 +1,19 @@
 ﻿using AutoReservation.BusinessLayer;
+using AutoReservation.Common.Interfaces;
 using System;
 using System.Diagnostics;
+using System.Collections.Generic;
 
 namespace AutoReservation.Service.Wcf
 {
-    public class AutoReservationService
+    public partial class AutoReservationService : IAutoReservationService
     {
-        AutoReservationBusinessComponent db = new AutoReservationBusinessComponent();
+        private readonly AutoReservationBusinessComponent autoReservationBusinessComponent;
 
+        public AutoReservationService()
+        {
+            autoReservationBusinessComponent = new AutoReservationBusinessComponent();
+        }
 
         private static void WriteActualMethod()
         {

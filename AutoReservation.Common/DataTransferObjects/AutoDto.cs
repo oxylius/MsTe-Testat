@@ -24,10 +24,10 @@ namespace AutoReservation.Common.DataTransferObjects
         private string marke;
         public string Marke
         {
-            get { return Marke; }
+            get { return marke; }
             set
             {
-                if (marke.Equals(value))
+                if (marke == value)
                 {
                     return;
                 }
@@ -80,7 +80,6 @@ namespace AutoReservation.Common.DataTransferObjects
                 this.OnPropertyChanged(p => p.Basistarif);
             }
         }
-
 
         public override string Validate()
         {

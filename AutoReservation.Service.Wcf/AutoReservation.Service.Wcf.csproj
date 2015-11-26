@@ -76,6 +76,9 @@
     <Compile Include="..\AssemblyInfo.Shared.cs">
       <Link>Properties\AssemblyInfo.Shared.cs</Link>
     </Compile>
+    <Compile Include="AutoReservationServiceReservation.cs" />
+    <Compile Include="AutoReservationServiceKunde.cs" />
+    <Compile Include="AutoReservationServiceAuto.cs" />
     <Compile Include="AutoReservationService.cs">
       <SubType>Code</SubType>
     </Compile>

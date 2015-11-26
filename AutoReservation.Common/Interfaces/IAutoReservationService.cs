@@ -1,15 +1,12 @@
 ﻿using AutoReservation.Common.DataTransferObjects.Core;
 using System.Collections.Generic;
+using System.ServiceModel;
 
 namespace AutoReservation.Common.Interfaces
 {
-    public interface IAutoReservationService<T>
-        where T : DtoBase<T>
+    [ServiceContract]
+    public partial interface IAutoReservationService
     {
-        List<DtoBase<T>> getAll();
-        T get(int primaryKey);
-        void put(T dto);
-        void update(T modified, T original);
-        void delete(T dto);
+        
     }
 }

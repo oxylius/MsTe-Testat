@@ -28,7 +28,7 @@ namespace AutoReservation.Common.DataTransferObjects
             get { return nachname; }
             set
             {
-                if (nachname.Equals(value))
+                if (nachname == value)
                 {
                     return;
                 }
@@ -43,7 +43,7 @@ namespace AutoReservation.Common.DataTransferObjects
             get { return vorname; }
             set
             {
-                if (vorname.Equals(value))
+                if (vorname == value)
                 {
                     return;
                 }
@@ -58,7 +58,7 @@ namespace AutoReservation.Common.DataTransferObjects
             get { return geburtsdatum; }
             set
             {
-                if (geburtsdatum.Equals(value))
+                if (geburtsdatum == value)
                 {
                     return;
                 }
